@@ -1,0 +1,7 @@
+.idea
+__pycache__
+checkpoint_dir
+checkpoints
+myresult
+results
+.DS_Store

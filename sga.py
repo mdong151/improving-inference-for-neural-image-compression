@@ -31,7 +31,7 @@ epsilon = 1e-5
 
 from configs import save_opt_record
 
-save_reconstruction = False
+save_reconstruction = True
 
 
 def compress(args):
@@ -189,7 +189,7 @@ def compress(args):
             log_itv = 10
         rd_lr = 0.005
         # rd_opt_its = args.sga_its
-        rd_opt_its = 2000
+        rd_opt_its = 100
         annealing_scheme = 'exp0'
         annealing_rate = args.annealing_rate  # default annealing_rate = 1e-3
         t0 = args.t0  # default t0 = 700
