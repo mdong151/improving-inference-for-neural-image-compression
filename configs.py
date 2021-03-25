@@ -9,5 +9,5 @@ def get_eval_batch_size(num_pixels_per_image):
     return round(eval_batch_num_pixels / num_pixels_per_image)
 
 # for comparing our discretization method against others (only for the non-bits-back version)
-save_opt_record = True
+save_opt_record = False
 

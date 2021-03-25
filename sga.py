@@ -189,7 +189,7 @@ def compress(args):
             log_itv = 10
         rd_lr = 0.005
         # rd_opt_its = args.sga_its
-        rd_opt_its = 100
+        rd_opt_its = 10
         annealing_scheme = 'exp0'
         annealing_rate = args.annealing_rate  # default annealing_rate = 1e-3
         t0 = args.t0  # default t0 = 700

@@ -183,14 +183,14 @@ def compress(args):
         log_itv = 100
         rd_lr = 0.005
         # rd_opt_its = args.sga_its
-        rd_opt_its = 2000
+        rd_opt_its = 10
         annealing_scheme = 'exp0'
         annealing_rate = args.annealing_rate  # default annealing_rate = 1e-3
         t0 = args.t0  # default t0 = 700
         T_ub = 0.5  # max/initial temperature
         from utils import annealed_temperature
         r_lr = 0.003
-        r_opt_its = 2000
+        r_opt_its = 100
         from adam import Adam
 
         batch_idx = 0

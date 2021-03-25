@@ -95,3 +95,15 @@ Download and untar them into `<checkpoint_dir>`, with each sub-folder correspond
 
 The `lmbda=0.001` models were trained for 1 million steps, `lmbda=0.08` models were trained for 3 million steps, and
 all the other models were trained for 2 million steps.
+
+## use full command 
+
+//mbt2018 - compress
+python mbt2018.py --num_filters 192 --verbose --checkpoint_dir /Users/dongnguyen/Documents/GitHub/improving-inference-for-neural-image-compression/checkpoint_dir/mbt2018_192_002/ compress mbt2018-num_filters=192-lmbda=0.02 ManhDong_profile.png
+
+
+//mbt2018 - decompress
+python mbt2018.py --num_filters 192 --verbose --checkpoint_dir /Users/dongnguyen/Documents/GitHub/improving-inference-for-neural-image-compression/checkpoint_dir/mbt2018_192_002/ decompress mbt2018-num_filters=192-lmbda=0.02 ManhDong_profile.png.tfci
+
+//sga - compress and decompress
+python bb_sga.py --num_filters 192 --verbose --checkpoint_dir ./checkpoints compress mbt2018_bb-num_filters=192-lmbda=0.01 ManhDong_profile.png --results_dir myresult2
